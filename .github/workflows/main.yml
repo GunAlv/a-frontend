@@ -1,0 +1,14 @@
+name: Frontend Workflow
+
+on:
+  push:
+    branches:
+      - '*'
+  workflow_dispatch:
+
+jobs:
+  call_template:
+    uses: https://github.com/GunAlv/a-template/.github/workflows/template.yml@main
+    with:
+      VITE_BASE_PATH: /a-frontend/
+      VITE_MAP_API_KEY: ${{ secrets.VITE_MAP_API_KEY }}
