@@ -11,4 +11,5 @@ jobs:
     uses: GunAlv/a-template/.github/workflows/template.yml@main
     with:
       VITE_BASE_PATH: /a-frontend/
+    secrets:
       VITE_MAP_API_KEY: ${{ secrets.VITE_MAP_API_KEY }}
